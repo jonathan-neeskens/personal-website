@@ -1,0 +1,76 @@
+$base-font-size: 1em;
+$h1-font-size: 3em;
+
+// Breakpoints
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+//General
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: Kayak Sans;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.inactive{
+  opacity: 0.2;
+}
+
+.fullheight{
+  height: calc(90%);
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.paddingleft{
+  padding: 50%;
+}
+
+
+//Typography
+h1{
+  font-family: Kayak Sans;
+  font-size: $h1-font-size;
+  color: #fff;
+}
+
+//Colors
+$purple: #D08EE9;
+$blue: #2D9CDB;
+$green: #27AE60;
+
+.purplegradient{
+  background: linear-gradient(90deg, #9B51E0 0%, #D08EE9 100%);
+}
+
+.bluegradient{
+  background: linear-gradient(269.9deg, #56CCF2 12.16%, #2D9CDB 90.79%);
+}
+
+.greengradient {
+  background: linear-gradient(90deg, #27AE60 0%, #6FCF97 100%);
+}
+
+
+//Header
+.header{
+  padding: 0!important;
+}
